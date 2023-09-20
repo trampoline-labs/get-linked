@@ -2,11 +2,11 @@
 module.exports = {
   darkMode: ["class"],
   content: [
-    './pages/**/*.{ts,tsx}',
-    './components/**/*.{ts,tsx}',
-    './app/**/*.{ts,tsx}',
-    './src/**/*.{ts,tsx}',
-	],
+    "./pages/**/*.{ts,tsx}",
+    "./components/**/*.{ts,tsx}",
+    "./app/**/*.{ts,tsx}",
+    "./src/**/*.{ts,tsx}",
+  ],
   theme: {
     container: {
       center: true,
@@ -50,11 +50,28 @@ module.exports = {
           DEFAULT: "hsl(var(--card))",
           foreground: "hsl(var(--card-foreground))",
         },
+        background_100: "var(--clr-background-100)",
+        background_200: "var(--clr-background-200)",
+        background_300: "var(--clr-background-300)",
+        background_400: "var(--clr-background-400)",
+        primary_100: "var(--clr-primary-100)",
+        primary_200: "var(--clr-primary-200)",
+        primary_300: "var(--clr-primary-300)",
+        primary_400: "var(--clr-primary-400)",
+        secondary_100: "var(--clr-secondary-100)",
+      },
+      fontFamily: {
+        clash_display: ["Clash Display", "sans-serif"],
+        montserrat: ["Montserrat", "sans-serif"],
       },
       borderRadius: {
         lg: "var(--radius)",
         md: "calc(var(--radius) - 2px)",
         sm: "calc(var(--radius) - 4px)",
+      },
+      fontSize: {
+        "3-5xl": "var(--text-lg)",
+        "7-5xl": "var(--text-xlarge)",
       },
       keyframes: {
         "accordion-down": {
@@ -73,4 +90,4 @@ module.exports = {
     },
   },
   plugins: [require("tailwindcss-animate")],
-}
+};

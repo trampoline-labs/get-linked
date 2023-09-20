@@ -56,10 +56,6 @@
     --text-xlarge: 5rem;
   }
 
-  p {
-    font-family: "Montserrat", sans-serif;
-  }
-
   .dark {
     --background: 222.2 84% 4.9%;
     --foreground: 210 40% 98%;
@@ -96,8 +92,8 @@
     @apply border-border;
   }
 
-  html {
-    background-color: var(--clr-background-100);
+  body {
+    @apply bg-background_100 font-montserrat;
   }
 
   /* body {

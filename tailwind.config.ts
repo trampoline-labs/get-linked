@@ -61,8 +61,8 @@ module.exports = {
         secondary_100: "var(--clr-secondary-100)",
       },
       fontFamily: {
-        clash_display: ["Clash Display", "sans-serif"],
-        montserrat: ["Montserrat", "sans-serif"],
+        "clash-display": ["var(--font-clash-display)", "sans-serif"],
+        montserrat: ["var(--font-montserrat)", "sans-serif"],
       },
       borderRadius: {
         lg: "var(--radius)",

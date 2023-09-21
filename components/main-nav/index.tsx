@@ -79,7 +79,9 @@ export default function Navbar() {
               </ul>
 
               <div className="mt-6">
-                <Button label="register" />
+                <SheetClose asChild>
+                  <Button label="register" />
+                </SheetClose>
               </div>
             </div>
           </SheetDescription>

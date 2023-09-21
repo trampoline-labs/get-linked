@@ -1,5 +1,3 @@
-"use client";
-
 import { timeline } from "@/lib/data";
 import dayjs from "dayjs";
 import localizezFormat from "dayjs/plugin/localizedFormat";

@@ -3,7 +3,7 @@ import theBigIdea from "@/public/images/image-two.svg";
 
 export default function Introduction() {
   return (
-    <section className="px-6 lg:px-40 py-12 grid grid-rows-2 lg:grid-rows-none lg:grid-cols-2 gap-8 lg:gap-14 border-b border-b-secondary-100">
+    <section className="px-6 lg:px-32 py-12 grid grid-rows-2 lg:grid-rows-none lg:grid-cols-2 gap-8 lg:gap-14 border-b border-b-secondary-100">
       <div className="scale-90 relative before:content-[url('/icons/twirl.svg')] before:w-20 before:h-20 before:absolute before:-bottom-16 lg:before:-bottom-5 before:left-[7rem] lg:before:left-[29rem] before:scale-50 lg:before:scale-100">
         <Image
           src={theBigIdea}

@@ -15,6 +15,14 @@ const clashDisplay = localFont({
   variable: "--font-clash-display",
 });
 
+const unicaOne = localFont({
+  src: "../assets/fonts/unica-one/unica-one-latin-400-normal.woff2",
+  display: "swap",
+  weight: "400",
+  style: "normal",
+  variable: "--font-unica-one",
+});
+
 export const metadata: Metadata = {
   title: "GetLinked🌟",
   description: "GetLinked Hackathon",
@@ -27,7 +35,9 @@ export default function RootLayout({
 }) {
   return (
     <html lang="en">
-      <body className={`${monserrat.variable} ${clashDisplay.variable}`}>
+      <body
+        className={`${monserrat.variable} ${clashDisplay.variable} ${unicaOne.variable}`}
+      >
         <Navbar />
         {children}
       </body>

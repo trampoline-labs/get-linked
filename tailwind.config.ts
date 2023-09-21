@@ -62,6 +62,7 @@ module.exports = {
       },
       fontFamily: {
         "clash-display": ["var(--font-clash-display)", "sans-serif"],
+        "unica-one": ["var(--font-unica-one)", "cursive"],
         montserrat: ["var(--font-montserrat)", "sans-serif"],
       },
       borderRadius: {

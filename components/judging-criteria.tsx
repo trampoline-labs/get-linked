@@ -1,13 +1,17 @@
 import Image from "next/image";
-import peeps from "@/public/images/image-four.svg";
 import { criteria } from "@/lib/data";
 import Button from "./button";
+import peeps from "@/public/images/image-four.svg";
+import ellipse from "@/public/icons/ellipse.svg";
 
 export default function JudgingCriteria() {
   return (
     <section className="px-6 lg:px-32 py-12 border-b border-b-secondary-100 lg:grid grid-cols-2 lg:gap-20">
-      <div className="lg:self-center">
-        <Image src={peeps} alt="Two guys looking" />
+      <div className="lg:self-center relative">
+        <span className="absolute hidden lg:block left-14 -top-14 z-0">
+          <Image src={ellipse} alt="Ellipse" />
+        </span>
+        <Image src={peeps} alt="Two guys looking" className="relative z-30" />
       </div>
 
       <article className="text-center lg:text-left">

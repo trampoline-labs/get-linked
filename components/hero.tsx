@@ -1,9 +1,9 @@
 import Image from "next/image";
-import Button from "../button";
+import Button from "./button";
 import matrix from "@/public/images/image-one.png";
 import chainIcon from "@/public/icons/chain.svg";
 import blastIcon from "@/public/icons/blast.svg";
-import { ScribbleIcon } from "../icons";
+import { ScribbleIcon } from "./icons";
 
 export default function Hero() {
   return (

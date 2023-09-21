@@ -7,10 +7,10 @@ import { ScribbleIcon } from "../icons";
 
 export default function Hero() {
   return (
-    <header className="px-6 lg:px-14 py-8 bg-[url('/images/flare-two.png')] bg-center bg-cover lg:bg-no-repeat">
-      <p className="italic font-bold text-base">
+    <header className="px-6 lg:px-14 pt-8 border-b border-b-secondary-100">
+      <p className="italic font-bold text-base lg:text-4xl lg:text-right">
         Igniting a Revolution in{" "}
-        <span className="relative">
+        <span className="relative inline-block">
           HR Innovation{" "}
           <span className="absolute block right-0">
             <ScribbleIcon />
@@ -18,14 +18,14 @@ export default function Hero() {
         </span>
       </p>
 
-      <article className="mt-14 grid grid-rows-2 gap-10">
-        <div>
-          <div className="text-center font-clash-display text-3-5xl font-bold leading-10">
+      <article className="mt-14 grid grid-rows-2 gap-10 lg:gap-0 lg:grid-cols-2 lg:grid-rows-none">
+        <div className="self-center">
+          <div className="text-center lg:text-left font-clash-display text-3-5xl lg:text-7xl font-bold leading-10 lg:leading-none">
             <h1 className="relative">
               getlinked Te
               <span className="relative">
                 c
-                <span className="block absolute bottom-7 -right-1 w-5 lg:w-10">
+                <span className="block absolute bottom-7 -right-1 w-5 lg:w-10 lg:-top-8 lg:-right-2">
                   <Image
                     src="/icons/bulb.svg"
                     width={10}
@@ -37,35 +37,35 @@ export default function Hero() {
               </span>
               h{" "}
             </h1>
-            <h2 className="">
-              Hackathon <span className="text-primary-200">1.0</span>{" "}
-              <span>
+            <h2 className="lg:flex">
+              Hackathon <span className="text-primary-200">1.0</span>
+              <span className="inline">
                 <Image
                   src={chainIcon}
                   alt="chain-icon"
-                  className="w-[2rem] h-[2rem] inline"
+                  className="w-[2rem] h-[2rem] inline lg:w-[4rem] lg:h-[4rem]"
                 />
               </span>
-              <span>
+              <span className="inline">
                 <Image
                   src={blastIcon}
                   alt="chain-icon"
-                  className="w-[2rem] h-[2rem] inline"
+                  className="w-[2rem] h-[2rem] inline lg:w-[4rem] lg:h-[4rem]"
                 />
               </span>
             </h2>
           </div>
 
-          <p className="text-sm text-center w-11/12 mx-auto my-3">
+          <p className="text-sm lg:text-xl text-center lg:text-left w-11/12 mx-auto lg:mx-0 my-3">
             Participate in getlinked tech Hackathon 2023 stand a chance to win a
             Big prize
           </p>
 
-          <div className="w-fit mx-auto mt-8">
+          <div className="w-fit mx-auto mt-8 lg:mx-0">
             <Button label="register" />
           </div>
 
-          <div className="flex gap-5 justify-center mt-8 font-unica-one text-5xl">
+          <div className="flex gap-5 justify-center lg:justify-normal mt-8 lg:mt-14 font-unica-one text-5xl">
             <h1>
               00<span className="font-montserrat uppercase text-sm">h</span>
             </h1>

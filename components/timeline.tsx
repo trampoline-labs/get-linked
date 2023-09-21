@@ -3,7 +3,6 @@
 import { timeline } from "@/lib/data";
 import dayjs from "dayjs";
 import localizezFormat from "dayjs/plugin/localizedFormat";
-import { cn } from "@/lib/utils";
 
 dayjs.extend(localizezFormat);
 

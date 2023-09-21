@@ -1,6 +1,6 @@
 import Link from "next/link";
-import Button from "../button";
-import { Times, MenuIcon } from "../icons";
+import Button from "./button";
+import { Times, MenuIcon } from "./icons";
 import {
   Sheet,
   SheetClose,

@@ -1,14 +1,18 @@
 import Image from "next/image";
 import rulesAndGuidelines from "@/public/images/image-three.svg";
+import ellipse from "@/public/icons/ellipse.svg";
 
 export default function RulesAndGuideLines() {
   return (
-    <section className="px-6 lg:px-14 py-12 border-b border-b-secondary-100 flex flex-col lg:flex-row-reverse lg:items-center lg:gap-14">
-      <div className="shrink-0">
+    <section className="px-6 lg:px-16 py-12 border-b border-b-secondary-100 flex flex-col lg:flex-row-reverse lg:items-center lg:gap-14">
+      <div className="shrink-0 w-fit max-w-xl relative">
+        <span className="absolute hidden lg:block right-24 top-24 z-0">
+          <Image src={ellipse} alt="Ellipse" />
+        </span>
         <Image
           src={rulesAndGuidelines}
           alt="Rules and Guidelines"
-          className="w-full h-auto"
+          className="w-full h-auto z-30 relative"
         />
       </div>
 

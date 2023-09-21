@@ -12,9 +12,9 @@ export default function Introduction() {
         />
       </div>
 
-      <article className="lg:self-center text-center lg:text-left lg:flex lg:flex-col lg:gap-4">
-        <h1 className="font-clash-display font-bold text-xl lg:text-3-5xl w-[90%] mx-auto lg:mx-0 lg:leading-10">
-          Introduction to getlinked{" "}
+      <article className="lg:self-center text-center lg:text-left flex flex-col gap-4">
+        <h1 className="font-clash-display font-bold text-xl lg:text-3-5xl mx-auto lg:mx-0 lg:leading-10">
+          Introduction to getlinked <br />
           <span className="text-primary-200">tech Hackathon 1.0</span>
         </h1>
         <p className="leading-7 text-sm">

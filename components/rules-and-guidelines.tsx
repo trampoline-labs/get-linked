@@ -16,9 +16,10 @@ export default function RulesAndGuideLines() {
         />
       </div>
 
-      <article className="text-center lg:text-left lg:flex lg:flex-col lg:gap-4">
-        <h1 className="font-clash-display font-bold text-xl lg:text-3-5xl w-1/2 mx-auto lg:mx-0 lg:leading-10">
-          Rules and <span className="text-primary-200">Guidelines</span>
+      <article className="text-center lg:text-left flex flex-col gap-4">
+        <h1 className="font-clash-display font-bold text-xl lg:text-3-5xl mx-auto lg:mx-0 lg:leading-10">
+          Rules and <br />
+          <span className="text-primary-200">Guidelines</span>
         </h1>
 
         <p className="leading-7 text-sm">

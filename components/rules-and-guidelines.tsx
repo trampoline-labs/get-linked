@@ -4,7 +4,7 @@ import ellipse from "@/public/icons/ellipse.svg";
 
 export default function RulesAndGuideLines() {
   return (
-    <section className="px-6 lg:px-16 py-12 border-b border-b-secondary-100 flex flex-col lg:flex-row-reverse lg:items-center lg:gap-14">
+    <section className="px-6 lg:px-32 py-12 border-b border-b-secondary-100 flex flex-col lg:flex-row-reverse lg:items-center lg:gap-14">
       <div className="shrink-0 w-fit max-w-xl relative">
         <span className="absolute hidden lg:block right-24 top-24 z-0">
           <Image src={ellipse} alt="Ellipse" />

@@ -62,7 +62,7 @@ export default function Hero() {
           </p>
 
           <div className="w-fit mx-auto mt-8 lg:mx-0">
-            <Button label="register" />
+            <Button label="register" path="/register" />
           </div>
 
           <div className="flex gap-5 justify-center lg:justify-normal mt-8 lg:mt-14 font-unica-one text-5xl">

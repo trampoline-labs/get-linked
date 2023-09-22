@@ -8,7 +8,7 @@ export default function Prizes() {
     <section className="flex flex-col lg:grid grid-rows-2 grid-cols-2 gap-10">
       <div className="lg:col-start-2 lg:justify-self-center lg:self-center">
         <HeadText label="Prizes and " highlight="Rewards">
-          <p className="leading-7 text-[0.75rem] lg:text-sm lg:w-11/12">
+          <p className="leading-7 text-xs lg:text-sm lg:w-11/12">
             Highlight of the prizes or rewards for winners and for participants.
           </p>
         </HeadText>

@@ -38,7 +38,7 @@ export default function Navbar() {
           </li>
         </ul>
 
-        <Button label="register" />
+        <Button label="register" path="/register" />
       </div>
 
       {/* only visibile on mobile */}
@@ -80,7 +80,7 @@ export default function Navbar() {
 
               <div className="mt-6">
                 <SheetClose asChild>
-                  <Button label="register" />
+                  <Button label="register" path="/register" />
                 </SheetClose>
               </div>
             </div>

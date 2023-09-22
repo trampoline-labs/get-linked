@@ -110,19 +110,19 @@ export const faqs = [
 export const prizes = [
   {
     id: "p1",
-    placement: "2nd Runner",
+    placement: "2nd",
     prize: 300000,
     img: runner_two,
   },
   {
     id: "p2",
-    placement: "1st Runner",
+    placement: "1st",
     prize: 400000,
     img: runner_one,
   },
   {
     id: "p3",
-    placement: "3rd Runner",
+    placement: "3rd",
     prize: 150000,
     img: runner_three,
   },

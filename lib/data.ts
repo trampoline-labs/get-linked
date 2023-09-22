@@ -69,3 +69,36 @@ export const criteria = [
     desc: "Judges will Ensure that the team adhered to the rules and guidelines of the hackathon, including deadlines, use of specific technologies or APIs, and any other competition-specific requirements.",
   },
 ];
+
+export const faqs = [
+  {
+    id: "f1",
+    title: "Can I work on a project I started before the hackathon?",
+    desc: "Lorem ipsum dolor sit amet consectetur, adipisicing elit. A temporibus itaque ex distinctio nulla assumenda nobis, necessitatibus hic amet excepturi!",
+  },
+  {
+    id: "f2",
+    title: "What happens if I need help during the hackathon?",
+    desc: "Lorem ipsum dolor sit amet consectetur, adipisicing elit. A temporibus itaque ex distinctio nulla assumenda nobis, necessitatibus hic amet excepturi!",
+  },
+  {
+    id: "f3",
+    title: "What happens if I don't have an idea for a project?",
+    desc: "Lorem ipsum dolor sit amet consectetur, adipisicing elit. A temporibus itaque ex distinctio nulla assumenda nobis, necessitatibus hic amet excepturi!",
+  },
+  {
+    id: "f4",
+    title: "Can I join a team or do I have to come with one?",
+    desc: "Lorem ipsum dolor sit amet consectetur, adipisicing elit. A temporibus itaque ex distinctio nulla assumenda nobis, necessitatibus hic amet excepturi!",
+  },
+  {
+    id: "f5",
+    title: "What happens after the hackathon ends?",
+    desc: "Lorem ipsum dolor sit amet consectetur, adipisicing elit. A temporibus itaque ex distinctio nulla assumenda nobis, necessitatibus hic amet excepturi!",
+  },
+  {
+    id: "f6",
+    title: "Can I work on a project I started before the hackathon?",
+    desc: "Lorem ipsum dolor sit amet consectetur, adipisicing elit. A temporibus itaque ex distinctio nulla assumenda nobis, necessitatibus hic amet excepturi!",
+  },
+];

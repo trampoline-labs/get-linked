@@ -39,6 +39,7 @@
     --clr-background-200: linear-gradient(270deg, #903aff 0%, #fe34b9 100%);
     --clr-background-300: rgba(212, 52, 254, 0.12);
     --clr-background-400: rgba(144, 58, 255, 0.12);
+    --clr-background-500: rgba(16, 11, 32, 1);
 
     /* COLORS */
     --clr-primary-100: rgba(255, 255, 255, 1);
@@ -101,6 +102,7 @@
   } */
 }
 
-section {
+section,
+footer {
   @apply border-b border-b-secondary-100 py-12 px-6;
 }

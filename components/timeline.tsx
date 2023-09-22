@@ -17,7 +17,7 @@ export default function TimeLine() {
         </p>
       </div>
 
-      <div className="flex flex-col gap-8 lg:gap-16 mt-5 lg:mt-44 lg:mx-auto lg:px-8 relative before:hidden lg:before:block before:bg-gradient-to-r before:from-primary-200 before:to-primary-400 before:absolute before:w-1 before:h-[110%] before:left-[49.99%] before:-top-28">
+      <div className="flex flex-col gap-8 lg:gap-16 mt-14 lg:mt-44 lg:mx-auto lg:px-8 relative before:hidden lg:before:block before:bg-gradient-to-r before:from-primary-200 before:to-primary-400 before:absolute before:w-1 before:h-[110%] before:left-[49.99%] before:-top-28">
         {timeline.map((event, idx) => {
           return (
             <TimeLineEvent

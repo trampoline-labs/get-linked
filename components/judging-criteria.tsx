@@ -44,7 +44,7 @@ interface RuleProps {
 function Rule({ highlight, desc }: RuleProps) {
   return (
     <li>
-      <p className="text-[0.75rem] lg:text-sm leading-6">
+      <p className="text-xs lg:text-sm leading-6">
         <span className="text-primary-300 font-bold lg:text-base">
           {highlight}:
         </span>{" "}

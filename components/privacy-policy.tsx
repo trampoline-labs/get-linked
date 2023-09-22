@@ -10,11 +10,11 @@ export default function PrivacyPolicy() {
         <div>
           <HeadText label="Privacy Policy and " highlight="Terms">
             <div className="flex flex-col gap-8">
-              <p className="text-[0.75rem] lg:text-sm text-[#FFFFFFBF]">
+              <p className="text-xs lg:text-sm text-[#FFFFFFBF]">
                 Last updated on September 12, 2023
               </p>
 
-              <p className="leading-7 text-[0.75rem] lg:text-sm">
+              <p className="leading-7 text-xs lg:text-sm">
                 Below are our privacy & policy, which outline a lot of goodies.
                 it’s our aim to always take of our participant
               </p>
@@ -23,7 +23,7 @@ export default function PrivacyPolicy() {
         </div>
 
         <div className="border border-primary-200 rounded-lg mt-7 py-10 px-4 lg:px-10 flex flex-col gap-9">
-          <p className="text-center lg:text-left text-[0.75rem] lg:text-sm leading-7 lg:leading-7 ">
+          <p className="text-center lg:text-left text-xs lg:text-sm leading-7 lg:leading-7 ">
             At getlinked tech Hackathon 1.0, we value your privacy and are
             committed to protecting your personal information. This Privacy
             Policy outlines how we collect, use, disclose, and safeguard your
@@ -35,7 +35,7 @@ export default function PrivacyPolicy() {
           <div className="flex flex-col gap-7">
             <div className="flex flex-col gap-5">
               <div className="leading-8">
-                <h1 className="text-[0.75rem] lg:text-base text-primary-200 capitalize font-bold">
+                <h1 className="text-xs lg:text-base text-primary-200 capitalize font-bold">
                   licensing policy
                 </h1>
                 <p className="font-bold text-xs lg:text-sm">

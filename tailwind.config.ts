@@ -60,6 +60,7 @@ module.exports = {
         "primary-300": "var(--clr-primary-300)",
         "primary-400": "var(--clr-primary-400)",
         "secondary-100": "var(--clr-secondary-100)",
+        "secondary-200": "var(--clr-secondary-200)",
       },
       fontFamily: {
         "clash-display": ["var(--font-clash-display)", "sans-serif"],

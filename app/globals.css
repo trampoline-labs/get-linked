@@ -100,3 +100,7 @@
     @apply bg-background text-foreground;
   } */
 }
+
+section {
+  @apply border-b border-b-secondary-100 py-12 px-6;
+}

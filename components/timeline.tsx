@@ -6,7 +6,7 @@ dayjs.extend(localizezFormat);
 
 export default function TimeLine() {
   return (
-    <section className="px-6 lg:px-14 py-12 lg:py-20 border-b border-b-secondary-100">
+    <section className="lg:px-14 lg:py-20">
       <div className="flex flex-col gap-4 lg:w-1/3 lg:mx-auto">
         <h1 className="font-clash-display text-xl lg:text-3-5xl font-bold capitalize text-center">
           timeline

@@ -1,13 +1,13 @@
-import Link from "next/link";
-import Button from "./button";
-import { Times, MenuIcon } from "./icons";
+import Link from 'next/link';
+import Button from './button';
+import { Times, MenuIcon } from './icons';
 import {
   Sheet,
   SheetClose,
   SheetContent,
   SheetDescription,
   SheetTrigger,
-} from "@/components/ui/sheet";
+} from '@/components/ui/sheet';
 
 export default function Navbar() {
   return (
@@ -34,7 +34,7 @@ export default function Navbar() {
             </CustomLink>
           </li>
           <li>
-            <CustomLink path="/">contact</CustomLink>
+            <CustomLink path="/contact">contact</CustomLink>
           </li>
         </ul>
 

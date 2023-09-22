@@ -1,3 +1,7 @@
+import runner_one from "../public/images/medals/medal-gold.svg";
+import runner_two from "../public/images/medals/medal-silver.svg";
+import runner_three from "../public/images/medals/medal-bronze.svg";
+
 export const timeline = [
   {
     id: "t1",
@@ -100,5 +104,26 @@ export const faqs = [
     id: "f6",
     title: "Can I work on a project I started before the hackathon?",
     desc: "Lorem ipsum dolor sit amet consectetur, adipisicing elit. A temporibus itaque ex distinctio nulla assumenda nobis, necessitatibus hic amet excepturi!",
+  },
+];
+
+export const prizes = [
+  {
+    id: "p1",
+    placement: "2nd Runner",
+    prize: 300000,
+    img: runner_two,
+  },
+  {
+    id: "p2",
+    placement: "1st Runner",
+    prize: 400000,
+    img: runner_one,
+  },
+  {
+    id: "p3",
+    placement: "3rd Runner",
+    prize: 150000,
+    img: runner_three,
   },
 ];

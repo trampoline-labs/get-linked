@@ -1,6 +1,9 @@
+"use client";
+
 import Image from "next/image";
 import Button from "./button";
 import matrix from "@/public/images/image-one.png";
+import { TypeAnimation } from "react-type-animation";
 import chainIcon from "@/public/icons/chain.svg";
 import blastIcon from "@/public/icons/blast.svg";
 import { ScribbleIcon } from "./icons";
@@ -11,7 +14,15 @@ export default function Hero() {
       <p className="italic font-bold text-base lg:text-4xl lg:text-right">
         Igniting a Revolution in{" "}
         <span className="relative inline-block">
-          HR Innovation{" "}
+          <span className="text-transparent">HR Innovation</span>
+          <TypeAnimation
+            preRenderFirstString={true}
+            sequence={["HR", 1000, "HR Innovation", 1000]}
+            speed={50}
+            repeat={Infinity}
+            cursor={false}
+            className="block top-0 left-0 absolute"
+          />
           <span className="absolute block right-0">
             <ScribbleIcon />
           </span>

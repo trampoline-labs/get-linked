@@ -2,6 +2,7 @@ import "./globals.css";
 import type { Metadata } from "next";
 import localFont from "next/font/local";
 import Navbar from "@/components/main-nav";
+import Footer from "@/components/footer";
 
 const monserrat = localFont({
   src: "../assets/fonts/montserrat/Montserrat-VariableFont_wght.ttf",
@@ -40,6 +41,7 @@ export default function RootLayout({
       >
         <Navbar />
         {children}
+        <Footer />
       </body>
     </html>
   );

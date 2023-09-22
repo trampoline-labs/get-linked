@@ -11,7 +11,7 @@ import HeadText from "./head-text";
 
 export default function FAQ() {
   return (
-    <section className="px-6 lg:px-32 py-12 border-b border-b-secondary-100 flex flex-col lg:flex-row gap-14">
+    <section className="lg:px-32 flex flex-col lg:flex-row gap-14">
       <article className="flex flex-col gap-4 lg:gap-10 lg:self-center lg:flex-1">
         <HeadText label="Frequently Asked " highlight="Questions">
           <p className="leading-7 text-[0.75rem] lg:text-sm">

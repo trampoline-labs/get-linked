@@ -6,7 +6,7 @@ import ellipse from "@/public/icons/ellipse.svg";
 
 export default function JudgingCriteria() {
   return (
-    <section className="px-6 lg:px-32 py-12 border-b border-b-secondary-100 lg:grid grid-cols-2 lg:gap-20">
+    <section className="lg:px-32 lg:grid grid-cols-2 lg:gap-20">
       <div className="lg:self-center relative">
         <span className="absolute hidden lg:block left-14 -top-14 z-0">
           <Image src={ellipse} alt="Ellipse" />

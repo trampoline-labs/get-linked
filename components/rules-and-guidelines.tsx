@@ -13,7 +13,7 @@ export default function RulesAndGuideLines() {
         <Image
           src={rulesAndGuidelines}
           alt="Rules and Guidelines"
-          className="w-full h-auto z-30 relative"
+          className="z-30 relative"
         />
       </div>
 

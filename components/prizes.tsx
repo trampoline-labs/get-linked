@@ -18,7 +18,7 @@ export default function Prizes() {
         <Image src={medal} alt="The Big Prize" />
       </div>
 
-      <div className="grid grid-cols-3 gap-4 lg:gap-10 pt-20 lg:-ml-16 lg:justify-self-start lg:w-[90%]">
+      <div className="grid grid-cols-3 gap-4 lg:gap-8 pt-20 lg:-ml-16 lg:justify-self-start lg:w-[97%]">
         {prizes.map((item) => {
           return (
             <Prize

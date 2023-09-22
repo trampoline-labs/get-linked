@@ -64,7 +64,7 @@ function TimeLineEvent({
       </span>
 
       <h2 className="text-primary-200 font-bold relative lg:text-2xl lg:basis-1/2 lg:group-even:text-right">
-        <span className="-left-7 absolute text-primary-100 bg-gradient-to-r from-primary-200 to-primary-400 rounded-full w-5 h-5 flex items-center justify-center lg:hidden">
+        <span className="-left-7 absolute ring-8 ring-offset-0 ring-background-100 text-primary-100 bg-gradient-to-r from-primary-200 to-primary-400 rounded-full w-5 h-5 flex items-center justify-center lg:hidden">
           {itemn}
         </span>
         {dayjs(date).format("LL")}

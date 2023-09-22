@@ -11,7 +11,7 @@ export default function TimeLine() {
         <h1 className="font-clash-display text-xl lg:text-3-5xl font-bold capitalize text-center">
           timeline
         </h1>
-        <p className="text-center">
+        <p className="text-center text-sm">
           Here is the breakdown of the time we anticipate using for the upcoming
           event.
         </p>

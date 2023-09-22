@@ -10,8 +10,8 @@ import theMan from "@/public/images/image-five.svg";
 
 export default function FAQ() {
   return (
-    <section className="px-6 lg:px-32 py-12 border-b border-b-secondary-100 flex flex-col gap-14">
-      <article className="flex flex-col gap-4">
+    <section className="px-6 lg:px-32 py-12 border-b border-b-secondary-100 flex flex-col lg:flex-row gap-14">
+      <article className="flex flex-col gap-4 lg:self-center lg:flex-1">
         <div className="text-center lg:text-left flex flex-col gap-4">
           <h1 className="font-clash-display font-bold text-xl lg:text-3-5xl mx-auto lg:mx-0 lg:leading-10">
             Frequently Asked <br />
@@ -45,8 +45,12 @@ export default function FAQ() {
         </div>
       </article>
 
-      <div>
-        <Image src={theMan} alt="Man with the questions" />
+      <div className="lg:shrink-0 lg:w-1/2">
+        <Image
+          src={theMan}
+          alt="Man with the questions"
+          className="w-full h-auto"
+        />
       </div>
     </section>
   );

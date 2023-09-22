@@ -59,11 +59,7 @@ export default function RegisterPage() {
   return (
     <main className="py-12 px-4 lg:flex lg:flex-row lg:gap-4 lg:px-10">
       <div className="w-10/12 mx-auto lg:w-auto lg:self-center">
-        <Image
-          src={designer}
-          alt="graphics designer"
-          className="w-full h-auto lg:object-scale-down"
-        />
+        <Image src={designer} alt="graphics designer" />
       </div>
 
       <div className="px-7 mt-4 lg:shrink-0 lg:flex-1 lg:basis-[55%] lg:bg-secondary-200 lg:p-20 lg:rounded-md lg:shadow-lg">

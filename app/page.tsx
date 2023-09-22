@@ -6,6 +6,7 @@ import FAQ from "@/components/faqs";
 import TimeLine from "@/components/timeline";
 import Prizes from "@/components/prizes";
 import Partners from "@/components/partners";
+import PrivacyPolicy from "@/components/privacy-policy";
 
 export default function Home() {
   return (
@@ -25,6 +26,8 @@ export default function Home() {
       <Prizes />
 
       <Partners />
+
+      <PrivacyPolicy />
     </main>
   );
 }

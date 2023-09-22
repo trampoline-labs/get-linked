@@ -47,6 +47,7 @@
     --clr-primary-300: rgba(255, 38, 185, 1);
     --clr-primary-400: rgba(144, 58, 255, 1);
     --clr-secondary-100: rgba(255, 255, 255, 0.18);
+    --clr-secondary-200: rgba(255, 255, 255, 0.03);
 
     /* Typography */
     --text-xsmall: 0.875rem; /* tailwind-includes */

@@ -14,7 +14,7 @@ export default function FAQ() {
     <section className="lg:px-32 flex flex-col lg:flex-row gap-14">
       <article className="flex flex-col gap-4 lg:gap-10 lg:self-center lg:flex-1">
         <HeadText label="Frequently Asked " highlight="Questions">
-          <p className="leading-7 text-[0.75rem] lg:text-sm">
+          <p className="leading-7 text-xs lg:text-sm">
             We got answers to the questions that you might want to ask about
             <span className="font-bold"> getlinked Hackathon 1.0</span>
           </p>
@@ -27,7 +27,7 @@ export default function FAQ() {
                 <AccordionItem
                   value={q.id}
                   key={q.id}
-                  className="text-[0.75rem] lg:text-sm"
+                  className="text-xs lg:text-sm"
                 >
                   <AccordionTrigger className="text-left">
                     {q.title}

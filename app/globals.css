@@ -108,3 +108,9 @@ section,
 footer {
   @apply border-b border-b-secondary-100 py-12 px-6;
 }
+
+.timeline::before {
+  top: calc(-1.4% - (7rem));
+  left: 49.99%;
+  height: 110%;
+}

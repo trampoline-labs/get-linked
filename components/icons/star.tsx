@@ -7,6 +7,7 @@ import star_three from "@/public/icons/star-three.svg";
 import star_four from "@/public/icons/star-four.svg";
 import Image from "next/image";
 import { getRandomNumber } from "@/lib/utils";
+import { cn } from "@/lib/utils";
 
 const starVariants = {
   initial: { scale: 1, opacity: 1 },
@@ -32,27 +33,33 @@ const imagePaths = [
   },
 ];
 
+const lookup = {
+  pink: 0,
+  white: 1,
+  gray: 2,
+  purple: 3,
+};
+
+type Color = "white" | "gray" | "pink" | "purple";
 export interface StarProps {
-  top: number;
-  left: number;
-  pattern?: 0 | 1 | 2 | 3;
+  color?: Color;
+  className: string;
 }
 
-export default function Star({ top, left }: StarProps) {
-  const pattern = getRandomNumber(0, 3);
+export default function Star({ className, color = "white" }: StarProps) {
   const width = getRandomNumber(15, 34);
   const height = getRandomNumber(15, 38);
 
   return (
     <motion.div
-      style={{ top: `${top}rem`, left: `${left}rem`, width, height }}
+      style={{ width, height }}
       variants={starVariants}
       initial="initial"
       animate="blink"
       transition={{ repeat: Infinity, duration: 0.9, repeatType: "reverse" }}
-      className="absolute"
+      className={cn("absolute", className)}
     >
-      <ImageComponent id={pattern} />
+      <ImageComponent id={lookup[color]} />
     </motion.div>
   );
 }

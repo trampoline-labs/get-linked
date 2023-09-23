@@ -3,10 +3,22 @@ import { criteria } from "@/lib/data";
 import Button from "./button";
 import peeps from "@/public/images/image-four.svg";
 import ellipse from "@/public/icons/ellipse.svg";
+import { Star } from "./icons";
 
 export default function JudgingCriteria() {
   return (
-    <section className="lg:px-32 lg:grid grid-cols-2 lg:gap-20">
+    <section className="lg:px-32 lg:grid grid-cols-2 lg:gap-20 lg:py-28 relative">
+      <>
+        <Star
+          className="top-2 left-[40%] lg:top-24 lg:left-[30%]"
+          color="purple"
+        />
+        <Star className="top-[20%] left-[55%] lg:left-[45%]" color="white" />
+        <Star
+          className="bottom-8 right-10 lg:bottom-[20%] lg:right-[65%]"
+          color="white"
+        />
+      </>
       <div className="lg:self-center relative">
         <span className="absolute hidden lg:block left-14 -top-14 z-0">
           <Image src={ellipse} alt="Ellipse" />

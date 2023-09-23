@@ -2,6 +2,8 @@ import runner_one from "../public/images/medals/medal-gold.svg";
 import runner_two from "../public/images/medals/medal-silver.svg";
 import runner_three from "../public/images/medals/medal-bronze.svg";
 
+export const API_ENDPOINT = " https://backend.getlinked.ai/hackathon";
+
 export const timeline = [
   {
     id: "t1",

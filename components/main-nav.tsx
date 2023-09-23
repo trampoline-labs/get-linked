@@ -1,3 +1,5 @@
+'use client';
+
 import Link from 'next/link';
 import Button from './button';
 import { Times, MenuIcon } from './icons';
@@ -8,10 +10,18 @@ import {
   SheetDescription,
   SheetTrigger,
 } from '@/components/ui/sheet';
+import { cn } from '@/lib/utils';
+import { usePathname } from 'next/navigation';
 
 export default function Navbar() {
+  const pathname = usePathname();
+
   return (
-    <nav className="px-6 lg:px-14 py-8 flex justify-between items-center border-b border-b-secondary-100">
+    <nav
+      className={`px-6 lg:px-14 py-8 flex justify-between items-center  ${
+        pathname === '/contact' ? '' : 'border-b border-b-secondary-100'
+      }`}
+    >
       <Link href="/">
         <h1 className="text-primary-100 font-clash-display font-bold text-xl lg:text-4xl">
           get<span className="text-primary-200">linked</span>
@@ -34,11 +44,23 @@ export default function Navbar() {
             </CustomLink>
           </li>
           <li>
-            <CustomLink path="/contact">contact</CustomLink>
+            <CustomLink
+              className={
+                pathname === '/contact'
+                  ? 'text-transparent bg-gradient-to-r bg-clip-text'
+                  : ''
+              }
+              path="/contact"
+            >
+              contact
+            </CustomLink>
           </li>
         </ul>
 
-        <Button label="register" path="/register" />
+        <Button
+          label="register"
+          path="/register"
+        />
       </div>
 
       {/* only visibile on mobile */}
@@ -73,14 +95,17 @@ export default function Navbar() {
                 </li>
                 <li>
                   <SheetClose asChild>
-                    <CustomLink path="/">contact</CustomLink>
+                    <CustomLink path="/contact">contact</CustomLink>
                   </SheetClose>
                 </li>
               </ul>
 
               <div className="mt-6">
                 <SheetClose asChild>
-                  <Button label="register" path="/register" />
+                  <Button
+                    label="register"
+                    path="/register"
+                  />
                 </SheetClose>
               </div>
             </div>
@@ -104,15 +129,20 @@ export function Close() {
 function CustomLink({
   path,
   children,
+  className,
 }: {
   path: string;
   children: React.ReactNode;
+  className?: string;
 }) {
   return (
     <>
       <Link
         href={path}
-        className="capitalize text-primary-100 text-lg lg:hover:text-transparent lg:hover:bg-gradient-to-r from-primary-400 to-primary-300 lg:bg-clip-text transition-all duration-300 ease-out"
+        className={cn(
+          'capitalize text-primary-100 text-lg lg:hover:text-transparent lg:hover:bg-gradient-to-r from-primary-400 to-primary-300 lg:bg-clip-text transition-all duration-300 ease-out',
+          className
+        )}
       >
         {children}
       </Link>

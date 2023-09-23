@@ -1,19 +1,22 @@
-import { faqs } from "@/lib/data";
+import { faqs } from '@/lib/data';
 import {
   Accordion,
   AccordionContent,
   AccordionItem,
   AccordionTrigger,
-} from "@/components/ui/accordion";
-import Image from "next/image";
-import theMan from "@/public/images/image-five.svg";
-import HeadText from "./head-text";
+} from '@/components/ui/accordion';
+import Image from 'next/image';
+import theMan from '@/public/images/image-five.svg';
+import HeadText from './head-text';
 
 export default function FAQ() {
   return (
-    <section className="lg:px-32 flex flex-col lg:flex-row gap-14">
+    <section className="py-12 px-6 lg:px-32 flex flex-col lg:flex-row gap-14">
       <article className="flex flex-col gap-4 lg:gap-10 lg:self-center lg:flex-1">
-        <HeadText label="Frequently Asked " highlight="Questions">
+        <HeadText
+          label="Frequently Asked "
+          highlight="Questions"
+        >
           <p className="leading-7 text-xs lg:text-sm">
             We got answers to the questions that you might want to ask about
             <span className="font-bold"> getlinked Hackathon 1.0</span>
@@ -21,7 +24,11 @@ export default function FAQ() {
         </HeadText>
 
         <div>
-          <Accordion type="single" collapsible className="w-full">
+          <Accordion
+            type="single"
+            collapsible
+            className="w-full"
+          >
             {faqs.map((q) => {
               return (
                 <AccordionItem

@@ -1,14 +1,17 @@
-import HeadText from "./head-text";
-import Button from "./button";
-import Image from "next/image";
-import padlockMan from "../public/images/image-seven.svg";
+import HeadText from './head-text';
+import Button from './button';
+import Image from 'next/image';
+import padlockMan from '../public/images/image-seven.svg';
 
 export default function PrivacyPolicy() {
   return (
-    <section className="flex flex-col gap-16 lg:flex-row lg:px-32 lg:py-24">
+    <section className="py-12 px-6 flex flex-col gap-16 lg:flex-row lg:px-32 lg:py-24">
       <div className="lg:flex lg:flex-col lg:gap-8">
         <div>
-          <HeadText label="Privacy Policy and " highlight="Terms">
+          <HeadText
+            label="Privacy Policy and "
+            highlight="Terms"
+          >
             <div className="flex flex-col gap-8">
               <p className="text-xs lg:text-sm text-[#FFFFFFBF]">
                 Last updated on September 12, 2023

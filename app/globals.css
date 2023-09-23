@@ -107,7 +107,7 @@
 
 section,
 footer {
-  @apply border-b border-b-secondary-100 py-12 px-6;
+  @apply border-b border-b-secondary-100;
 }
 
 .timeline::before {

@@ -1,14 +1,14 @@
-import Link from "next/link";
+import Link from 'next/link';
 import {
   TwitterIcon,
   FaceBookIcon,
   LinkedinIcon,
   InstagramIcon,
-} from "./icons";
+} from './icons';
 
 export default function Footer() {
   return (
-    <footer className="bg-background-500 text-primary-100 text-xs">
+    <footer className="py-12 px-6 bg-background-500 text-primary-100 text-xs">
       <div className="flex flex-col lg:flex-row gap-10 lg:gap-36 lg:justify-center px-11">
         <div className="flex flex-col gap-8 lg:basis-1/3">
           <div className="flex flex-col gap-2">

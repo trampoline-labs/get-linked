@@ -1,9 +1,9 @@
-import Image from "next/image";
-import partners from "../public/images/partners-and-sponsors.png";
+import Image from 'next/image';
+import partners from '../public/images/partners-and-sponsors.png';
 
 export default function Partners() {
   return (
-    <section className="flex flex-col gap-10 lg:gap-14 py-20">
+    <section className=" px-6 flex flex-col gap-10 lg:gap-14 py-20">
       <div className="flex flex-col gap-4 lg:gap-6 lg:w-1/3 lg:mx-auto">
         <h1 className="font-clash-display text-xl lg:text-3-5xl font-bold capitalize text-center">
           Partners and Sponsors

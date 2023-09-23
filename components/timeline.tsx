@@ -1,12 +1,12 @@
-import { timeline } from "@/lib/data";
-import dayjs from "dayjs";
-import localizezFormat from "dayjs/plugin/localizedFormat";
+import { timeline } from '@/lib/data';
+import dayjs from 'dayjs';
+import localizezFormat from 'dayjs/plugin/localizedFormat';
 
 dayjs.extend(localizezFormat);
 
 export default function TimeLine() {
   return (
-    <section className="lg:px-14 lg:py-20">
+    <section className="py-12 px-6 lg:px-14 lg:py-20">
       <div className="flex flex-col gap-4 lg:w-1/3 lg:mx-auto">
         <h1 className="font-clash-display text-xl lg:text-3-5xl font-bold capitalize text-center">
           timeline
@@ -67,7 +67,7 @@ function TimeLineEvent({
         <span className="-left-7 absolute ring-8 ring-offset-0 ring-background-100 text-primary-100 bg-gradient-to-r from-primary-200 to-primary-400 rounded-full w-5 h-5 flex items-center justify-center lg:hidden">
           {itemn}
         </span>
-        {dayjs(date).format("LL")}
+        {dayjs(date).format('LL')}
       </h2>
     </article>
   );

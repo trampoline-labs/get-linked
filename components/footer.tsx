@@ -1,22 +1,28 @@
-import Link from "next/link";
+import Link from 'next/link';
 import {
   TwitterIcon,
   FaceBookIcon,
   LinkedinIcon,
   InstagramIcon,
-} from "./icons";
-import { Star } from "./icons";
+} from './icons';
+import { Star } from './icons';
 
 export default function Footer() {
   return (
-    <footer className="bg-background-500 text-primary-100 text-xs relative">
+    <footer className="py-12 px-6 bg-background-500 text-primary-100 text-xs relative">
       <>
-        <Star className="" color="white" />
+        <Star
+          className=""
+          color="white"
+        />
         <Star
           className="top-[50%] left-[45%] lg:left-[80%] lg:top-[45%]"
           color="gray"
         />
-        <Star className="bottom-[20%] right-14" color="gray" />
+        <Star
+          className="bottom-[20%] right-14"
+          color="gray"
+        />
         <Star
           className="bottom-[15%] right-[45%] lg:bottom-[20%]"
           color="pink"

@@ -18,8 +18,10 @@ export default function Navbar() {
 
   return (
     <nav
-      className={`px-6 lg:px-14 py-8 flex justify-between items-center  ${
-        pathname === '/contact' ? '' : 'border-b border-b-secondary-100'
+      className={`px-6 lg:px-14 py-8 flex justify-between items-center bg-transparent z-50 relative  ${
+        pathname === '/contact' || pathname === '/register'
+          ? ''
+          : 'border-b border-b-secondary-100'
       }`}
     >
       <Link href="/">

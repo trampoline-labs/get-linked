@@ -1,22 +1,40 @@
-import HeadText from "./head-text";
-import Button from "./button";
-import Image from "next/image";
-import padlockMan from "../public/images/image-seven.svg";
-import { Star } from "./icons";
+import HeadText from './head-text';
+import Button from './button';
+import Image from 'next/image';
+import padlockMan from '../public/images/image-seven.svg';
+import { Star } from './icons';
 
 export default function PrivacyPolicy() {
   return (
-    <section className="flex flex-col gap-16 lg:flex-row px-10 lg:px-32 lg:py-24 relative">
+    <section className="py-16 flex flex-col gap-16 lg:flex-row px-10 lg:px-32 lg:py-24 relative">
       <>
-        <Star className="top-[10%] right-6" color="purple" />
-        <Star className="top-[40%] left-2" color="purple" />
-        <Star className="top-[65%] left-6" color="purple" />
-        <Star className="top-[85%] left-20" color="white" />
-        <Star className="top-[90%] right-10" color="white" />
+        <Star
+          className="top-[10%] right-6"
+          color="purple"
+        />
+        <Star
+          className="top-[40%] left-2"
+          color="purple"
+        />
+        <Star
+          className="top-[65%] left-6"
+          color="purple"
+        />
+        <Star
+          className="top-[85%] left-20"
+          color="white"
+        />
+        <Star
+          className="top-[90%] right-10"
+          color="white"
+        />
       </>
       <div className="lg:flex lg:flex-col lg:gap-8">
         <div>
-          <HeadText label="Privacy Policy and " highlight="Terms">
+          <HeadText
+            label="Privacy Policy and "
+            highlight="Terms"
+          >
             <div className="flex flex-col gap-8">
               <p className="text-xs lg:text-sm text-[#FFFFFFBF]">
                 Last updated on September 12, 2023

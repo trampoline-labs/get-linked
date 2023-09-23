@@ -1,11 +1,11 @@
 import Image from "next/image";
-import theBigIdea from "@/public/images/image-two.svg";
 import { Star } from "./icons";
-import SlideIn, { HoverGesture } from "./animate";
+import SlideIn from "./animate";
+import theBigIdea from "@/public/images/image-two.svg";
 
 export default function Introduction() {
   return (
-    <section className="lg:px-32 grid grid-rows-2 lg:grid-rows-none lg:grid-cols-2 gap-8 lg:gap-14 relative">
+    <section className="py-12 px-6 lg:px-32 grid grid-rows-2 lg:grid-rows-none lg:grid-cols-2 gap-8 lg:gap-14 relative">
       <>
         <Star className="top-10 left-8 lg:top-[30%] lg:left-28" color="pink" />
         <Star

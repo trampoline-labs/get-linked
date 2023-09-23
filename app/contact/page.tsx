@@ -1,6 +1,5 @@
 'use client';
 
-import Button from '@/components/button';
 import Image from 'next/image';
 import FBICon from '@/public/icons/facebook.svg';
 import XICon from '@/public/icons/ex.svg';
@@ -8,6 +7,7 @@ import LinkedInICon from '@/public/icons/linkedin.svg';
 import InstaICon from '@/public/icons/instagram.svg';
 
 import { useMediaQuery } from 'usehooks-ts';
+import Btn from '@/components/ui/Btn';
 
 const ContactPage = () => {
   const matches = useMediaQuery('(max-width: 768px)');
@@ -144,9 +144,9 @@ const ContactPage = () => {
               </label>
             </div>
 
-            <Button
+            <Btn
               className="w-fit font-medium"
-              label="Submit"
+              text="Submit"
             />
           </div>
         </form>

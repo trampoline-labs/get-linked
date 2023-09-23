@@ -83,7 +83,7 @@ export default function RegisterPage() {
           action=""
           className="capitalize text-primary-100 text-sm flex flex-col gap-6 mt-4 lg:mt-8"
         >
-          <div className="lg:grid grid-rows-2 grid-cols-2 gap-x-8 gap-y-6">
+          <div className="grid auto-rows-auto gap-6 lg:grid-rows-2 lg:grid-cols-2 lg:gap-x-8 lg:gap-y-6">
             {forms.map((form) => {
               return (
                 <div className="flex flex-col gap-2" key={form.id}>

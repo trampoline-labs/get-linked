@@ -14,6 +14,10 @@ const ContactPage = () => {
 
   const messageRows = matches ? 7 : 5;
 
+  const formSubmitHandler = (e: React.FormEvent<HTMLFormElement>) => {
+    e.preventDefault();
+  };
+
   return (
     <div className=" grid">
       <div className=" col-span-full row-span-full w-full h-full bg-[-8rem_-20rem] md:bg-[left_-100%] bg-no-repeat bg-[url('../public/images/star-flare-background-three.png')] blur-md">
@@ -67,7 +71,10 @@ const ContactPage = () => {
             </div>
           </div>
         </div>
-        <form className="flex flex-col gap-8 max-w-[750px] lg:max-w-[39rem] lg:bg-secondary-200 lg:rounded-[.75rem] lg:p-[5rem] lg:shadow-lg ">
+        <form
+          onSubmit={(e) => formSubmitHandler(e)}
+          className="flex flex-col gap-8 max-w-[750px] lg:max-w-[39rem] lg:bg-secondary-200 lg:rounded-[.75rem] lg:p-[5rem] lg:shadow-lg "
+        >
           <div className="flex flex-col gap-3">
             <h2 className="text-primary-200 font-clash-display font-bold text-xl lg:font-semibold">
               Questions or need assistance? <br />
@@ -83,6 +90,7 @@ const ContactPage = () => {
                 className="border-[2px] border-primary-100 rounded-[7px] outline-transparent bg-transparent w-full py-3 px-5 peer"
                 type="text"
                 id="team-name"
+                required
               />
               <label
                 className="absolute left-0 translate-y-3.5 translate-x-4 peer-focus:text-sm peer-focus:translate-x-0 peer-focus:-translate-y-6 transition"
@@ -96,6 +104,7 @@ const ContactPage = () => {
                 className="border-[2px] border-primary-100 rounded-[7px] outline-transparent bg-transparent w-full py-3 px-5 peer"
                 type="text"
                 id="topic"
+                required
               />
               <label
                 className="absolute left-0 translate-y-3.5 translate-x-4 peer-focus:text-sm peer-focus:translate-x-0 peer-focus:-translate-y-6 transition"
@@ -109,6 +118,7 @@ const ContactPage = () => {
                 className="border-[2px] border-primary-100 rounded-[7px] outline-transparent bg-transparent w-full py-3 px-5 peer"
                 type="text"
                 id="email"
+                required
               />
               <label
                 className="absolute left-0 translate-y-3.5 translate-x-4 peer-focus:text-sm peer-focus:translate-x-0 peer-focus:-translate-y-6 transition"

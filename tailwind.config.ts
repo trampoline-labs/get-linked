@@ -56,6 +56,7 @@ module.exports = {
         'background-400': 'var(--clr-background-400)',
         'background-500': 'var(--clr-background-500)',
         'background-600': 'var(--clr-background-600)',
+        'background-700': 'var(--clr-background-700)',
         'primary-100': 'var(--clr-primary-100)',
         'primary-200': 'var(--clr-primary-200)',
         'primary-300': 'var(--clr-primary-300)',

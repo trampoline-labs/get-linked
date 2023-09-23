@@ -142,22 +142,7 @@ export default function RegisterPage() {
 
   return (
     <>
-      {/* <Popup /> */}
-      {/* <div>
-        <div></div>
-        <div></div>
-      </div> */}
-      {/* md:bg-background-100 md:bg-[url('../public/images/flare-two.png')] md:bg-blend-hard-light md:bg-no-repeat md:bg-contain md:bg-[-1rem_-7rem] */}
       <main className="md:bg-[url('../public/images/star-flare-background-three.png')]">
-        {/* Blob */}
-        {/* <div className="row-span-full col-span-full grid grid-cols-2">
-          <div className="relative md:before:block md:before:absolute md:before:bg-background-100 md:before:bg-[url('../public/images/flare-two.png')] md:before:bg-contain md:before:bg-blend-hard-light md:before:bg-no-repeat md:before:w-[24.75rem] md:before:h-[27.625rem] md:before:-top-[3rem] md:before:left-0">
-            &nbsp;
-          </div>
-          <div className="relative md:before:opacity-50 md:before:block md:before:w-full md:before:h-full md:before:absolute md:before:bg-background-100 md:before:bg-[url('../public/images/flare-two.png')] md:before:bg-blend-hard-light md:before:bg-no-repeat md:before:bg-[9rem_7rem] md:before:bottom-0 md:before:right-0">
-            &nbsp;
-          </div>
-        </div> */}
         {/* Content */}
         <div className="row-span-full col-span-full py-12 px-4 lg:flex lg:flex-row lg:gap-4 lg:px-10 z-10">
           <div className="w-10/12 mx-auto lg:w-auto lg:self-center">

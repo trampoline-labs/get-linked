@@ -2,10 +2,22 @@ import Image from "next/image";
 import rulesAndGuidelines from "@/public/images/image-three.svg";
 import ellipse from "@/public/icons/ellipse.svg";
 import HeadText from "./head-text";
+import { Star } from "./icons";
 
 export default function RulesAndGuideLines() {
   return (
-    <section className="lg:px-32 flex flex-col lg:flex-row-reverse lg:items-center lg:gap-14">
+    <section className="lg:px-32 flex flex-col lg:flex-row-reverse lg:items-center lg:gap-14 relative">
+      <>
+        <Star className="left-10 top-[35%]" color="gray" />
+        <Star
+          className="right-9 top-[45%] lg:top-10 lg:right-[90%]"
+          color="purple"
+        />
+        <Star
+          className="bottom-4 left-20 lg:left-[50%] lg:bottom-28"
+          color="white"
+        />
+      </>
       <div className="shrink-0 w-fit max-w-xl relative">
         <span className="absolute hidden lg:block right-24 top-24 z-0">
           <Image src={ellipse} alt="Ellipse" />

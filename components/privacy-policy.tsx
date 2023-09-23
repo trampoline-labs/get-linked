@@ -2,10 +2,18 @@ import HeadText from "./head-text";
 import Button from "./button";
 import Image from "next/image";
 import padlockMan from "../public/images/image-seven.svg";
+import { Star } from "./icons";
 
 export default function PrivacyPolicy() {
   return (
-    <section className="flex flex-col gap-16 lg:flex-row lg:px-32 lg:py-24">
+    <section className="flex flex-col gap-16 lg:flex-row px-10 lg:px-32 lg:py-24 relative">
+      <>
+        <Star className="top-[10%] right-6" color="purple" />
+        <Star className="top-[40%] left-2" color="purple" />
+        <Star className="top-[65%] left-6" color="purple" />
+        <Star className="top-[85%] left-20" color="white" />
+        <Star className="top-[90%] right-10" color="white" />
+      </>
       <div className="lg:flex lg:flex-col lg:gap-8">
         <div>
           <HeadText label="Privacy Policy and " highlight="Terms">

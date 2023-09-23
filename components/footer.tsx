@@ -5,10 +5,23 @@ import {
   LinkedinIcon,
   InstagramIcon,
 } from "./icons";
+import { Star } from "./icons";
 
 export default function Footer() {
   return (
-    <footer className="bg-background-500 text-primary-100 text-xs">
+    <footer className="bg-background-500 text-primary-100 text-xs relative">
+      <>
+        <Star className="" color="white" />
+        <Star
+          className="top-[50%] left-[45%] lg:left-[80%] lg:top-[45%]"
+          color="gray"
+        />
+        <Star className="bottom-[20%] right-14" color="gray" />
+        <Star
+          className="bottom-[15%] right-[45%] lg:bottom-[20%]"
+          color="pink"
+        />
+      </>
       <div className="flex flex-col lg:flex-row gap-10 lg:gap-36 lg:justify-center px-11">
         <div className="flex flex-col gap-8 lg:basis-1/3">
           <div className="flex flex-col gap-2">

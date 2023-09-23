@@ -5,3 +5,4 @@ export { default as TwitterIcon } from "./twitter";
 export { default as FaceBookIcon } from "./facebook";
 export { default as LinkedinIcon } from "./linked-in";
 export { default as InstagramIcon } from "./instagram";
+export { default as Star } from "./star";

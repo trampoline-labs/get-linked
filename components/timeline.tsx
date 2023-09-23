@@ -1,12 +1,27 @@
 import { timeline } from '@/lib/data';
 import dayjs from 'dayjs';
 import localizezFormat from 'dayjs/plugin/localizedFormat';
+import { Star } from './icons';
 
 dayjs.extend(localizezFormat);
 
 export default function TimeLine() {
   return (
-    <section className="py-12 px-6 lg:px-14 lg:py-20">
+    <section className="px-10 py-16 lg:px-14 lg:py-20 relative">
+      <>
+        <Star
+          className="top-[15%] left-10 lg:left-[20%]"
+          color="purple"
+        />
+        <Star
+          className="top-[45%] left-[60%]"
+          color="white"
+        />
+        <Star
+          className="bottom-4 left-4"
+          color="gray"
+        />
+      </>
       <div className="flex flex-col gap-4 lg:w-1/3 lg:mx-auto">
         <h1 className="font-clash-display text-xl lg:text-3-5xl font-bold capitalize text-center">
           timeline

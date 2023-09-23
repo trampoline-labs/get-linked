@@ -6,8 +6,8 @@ import matrix from '@/public/images/image-one.png';
 import { TypeAnimation } from 'react-type-animation';
 import chainIcon from '@/public/icons/chain.svg';
 import blastIcon from '@/public/icons/blast.svg';
-import { ScribbleIcon } from './icons';
-import { useState, useEffect } from 'react';
+import { ScribbleIcon, Star } from './icons';
+import { CountDown } from './countdown';
 
 export default function Hero() {
   return (
@@ -21,6 +21,20 @@ export default function Hero() {
         </div>
       </div>
       <div className="z-20 row-span-full col-span-full px-6 lg:px-14 pt-8 border-b border-b-secondary-100">
+        <>
+          <Star
+            className="top-20 left-28"
+            color="white"
+          />
+          <Star
+            className="top-32 right-9 lg:right-[50%]"
+            color="gray"
+          />
+          <Star
+            className="top-[43%] right-14 lg:top-[80%] lg:right-[60%]"
+            color="gray"
+          />
+        </>
         <p className="italic font-bold text-base lg:text-4xl lg:text-right">
           Igniting a Revolution in{' '}
           <span className="relative inline-block">
@@ -104,58 +118,5 @@ export default function Hero() {
         </article>
       </div>
     </header>
-  );
-}
-
-const oneMinute = 60 * 1000;
-
-interface CountDownProps {
-  targetTime: `${number}-${number}-${number}`;
-}
-
-function CountDown({ targetTime }: CountDownProps) {
-  const target = new Date(`${targetTime}T00:00:00`).getTime();
-  const [timeLeft, setTimeLeft] = useState(calculateTimeLeft(target));
-
-  useEffect(() => {
-    const interval = setInterval(() => {
-      setTimeLeft(calculateTimeLeft(target));
-    }, 1000);
-
-    if (timeLeft.seconds < 0) {
-      setTimeLeft({ seconds: 0, minutes: 0, hours: 0 });
-      clearInterval(interval);
-    }
-
-    return () => clearInterval(interval);
-  }, [target]);
-
-  function calculateTimeLeft(targetTime: number) {
-    const now = new Date().getTime();
-    const difference = targetTime - now;
-
-    const totalMinutes = Math.floor(difference / oneMinute);
-    const hours = Math.floor(totalMinutes / 60);
-    const minutes = totalMinutes % 60;
-    const seconds = Math.floor((difference % oneMinute) / 1000);
-
-    return { hours, minutes, seconds };
-  }
-
-  return (
-    <div className="flex gap-5 justify-center lg:justify-normal mt-8 lg:mt-14 font-unica-one text-5xl">
-      <h1>
-        {timeLeft.hours.toString().padStart(2, '0')}
-        <span className="font-montserrat uppercase text-sm">h</span>
-      </h1>
-      <h1>
-        {timeLeft.minutes.toString().padStart(2, '0')}
-        <span className="font-montserrat uppercase text-sm">m</span>
-      </h1>
-      <h1>
-        {timeLeft.seconds.toString().padStart(2, '0')}
-        <span className="font-montserrat uppercase text-sm">s</span>
-      </h1>
-    </div>
   );
 }

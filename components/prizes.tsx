@@ -2,10 +2,33 @@ import HeadText from './head-text';
 import Image from 'next/image';
 import medal from '@/public/images/image-six.svg';
 import { prizes } from '@/lib/data';
+import { Star } from './icons';
 
 export default function Prizes() {
   return (
-    <section className="py-12 px-6 flex flex-col lg:grid grid-rows-2 grid-cols-2 gap-10">
+    <section className="px-6 flex flex-col lg:grid grid-rows-2 grid-cols-2 gap-10 relative py-14">
+      <>
+        <Star
+          className="left-9 lg:left-32 lg:top-32"
+          color="pink"
+        />
+        <Star
+          className="right-20 top-[10%] lg:right-[40%]"
+          color="pink"
+        />
+        <Star
+          className="top-[50%]"
+          color="white"
+        />
+        <Star
+          className="right-9 top-[60%] lg:right-[50%] lg:top-[40%]"
+          color="white"
+        />
+        <Star
+          className="bottom-4 right-20"
+          color="gray"
+        />
+      </>
       <div className="lg:col-start-2 lg:justify-self-center lg:self-center">
         <HeadText
           label="Prizes and "

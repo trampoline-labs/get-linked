@@ -8,10 +8,17 @@ import {
 import Image from 'next/image';
 import theMan from '@/public/images/image-five.svg';
 import HeadText from './head-text';
+import { Star } from './icons';
 
 export default function FAQ() {
   return (
-    <section className="py-12 px-6 lg:px-32 flex flex-col lg:flex-row gap-14">
+    <section className="lg:px-32 flex flex-col lg:flex-row gap-14 relative">
+      <>
+        <Star
+          className="left-10 top-6"
+          color="purple"
+        />
+      </>
       <article className="flex flex-col gap-4 lg:gap-10 lg:self-center lg:flex-1">
         <HeadText
           label="Frequently Asked "

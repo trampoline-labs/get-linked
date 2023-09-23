@@ -1,9 +1,20 @@
 import Image from 'next/image';
 import theBigIdea from '@/public/images/image-two.svg';
+import { Star } from './icons';
 
 export default function Introduction() {
   return (
-    <section className="py-12 px-6 lg:px-32 grid grid-rows-2 lg:grid-rows-none lg:grid-cols-2 gap-8 lg:gap-14">
+    <section className="py-12 px-6 lg:px-32 grid grid-rows-2 lg:grid-rows-none lg:grid-cols-2 gap-8 lg:gap-14 relative">
+      <>
+        <Star
+          className="top-10 left-8 lg:top-[30%] lg:left-28"
+          color="pink"
+        />
+        <Star
+          className="top-[50%] right-8 lg:top-[30%] lg:right-28"
+          color="purple"
+        />
+      </>
       <div className="scale-90 relative before:content-[url('/icons/twirl.svg')] before:w-20 before:h-20 before:absolute before:-bottom-16 lg:before:-bottom-5 before:left-[7rem] lg:before:left-[29rem] before:scale-50 lg:before:scale-100">
         <Image
           src={theBigIdea}

@@ -41,6 +41,7 @@
     --clr-background-400: rgba(144, 58, 255, 0.12);
     --clr-background-500: rgba(16, 11, 32, 1);
     --clr-background-600: linear-gradient(90deg, #903aff 3.08%, #ff26b9 93.85%);
+    --clr-background-700: rgba(21, 14, 40, 0.93);
 
     /* COLORS */
     --clr-primary-100: rgba(255, 255, 255, 1);

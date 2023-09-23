@@ -9,7 +9,7 @@ import { Star } from './icons';
 
 export default function Footer() {
   return (
-    <footer className="bg-background-500 text-primary-100 text-xs relative">
+    <footer className="py-12 px-6 bg-background-500 text-primary-100 text-xs relative">
       <>
         <Star
           className=""

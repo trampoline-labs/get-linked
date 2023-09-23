@@ -6,7 +6,7 @@ import { Star } from './icons';
 
 export default function PrivacyPolicy() {
   return (
-    <section className="py- flex flex-col gap-16 lg:flex-row px-10 lg:px-32 lg:py-24 relative">
+    <section className="py-16 flex flex-col gap-16 lg:flex-row px-10 lg:px-32 lg:py-24 relative">
       <>
         <Star
           className="top-[10%] right-6"

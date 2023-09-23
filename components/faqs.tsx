@@ -12,7 +12,7 @@ import { Star } from './icons';
 
 export default function FAQ() {
   return (
-    <section className="lg:px-32 flex flex-col lg:flex-row gap-14 relative">
+    <section className="px-10 py-16 lg:px-32 flex flex-col lg:flex-row gap-14 relative">
       <>
         <Star
           className="left-10 top-6"

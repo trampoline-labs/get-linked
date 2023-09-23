@@ -11,7 +11,7 @@ export default function RulesAndGuideLines() {
         <div className="bg-background-100 bg-[url('../public/images/flare-two.png')] bg-blend-hard-light bg-contain bg-no-repeat bg-[0_-7rem]">
           &nbsp;
         </div>
-        <div className="hidden md:block bg-background-100 bg-[url('../public/images/flare-two.png')] bg-blend-hard-light bg-no-repeat bg-[10rem_10rem] md:bg-cover">
+        <div className="bg-background-100 bg-[url('../public/images/flare-two.png')] bg-blend-hard-light bg-no-repeat bg-[10rem_10rem] md:bg-cover">
           &nbsp;
         </div>
       </div>

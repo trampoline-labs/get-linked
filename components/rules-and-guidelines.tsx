@@ -3,6 +3,7 @@ import rulesAndGuidelines from "@/public/images/image-three.svg";
 import ellipse from "@/public/icons/ellipse.svg";
 import HeadText from "./head-text";
 import { Star } from "./icons";
+import SlideIn from "./animate";
 
 export default function RulesAndGuideLines() {
   return (
@@ -29,14 +30,16 @@ export default function RulesAndGuideLines() {
         />
       </div>
 
-      <HeadText label="Rules and " highlight="Guidelines">
-        <p className="leading-7 text-sm">{`Our tech hackathon is a melting pot of visionaries, and its purpose is
+      <SlideIn fromDirection="left">
+        <HeadText label="Rules and " highlight="Guidelines">
+          <p className="leading-7 text-sm">{`Our tech hackathon is a melting pot of visionaries, and its purpose is
           as clear as day: to shape the future. Whether you're a coding genius,
           a design maverick, or a concept wizard, you'll have the chance to
           transform your ideas into reality. Solving real-world problems,
           pushing the boundaries of technology, and creating solutions that can
           change the world, that's what we're all about!`}</p>
-      </HeadText>
+        </HeadText>
+      </SlideIn>
     </section>
   );
 }

@@ -1,6 +1,7 @@
 import Image from "next/image";
 import theBigIdea from "@/public/images/image-two.svg";
 import { Star } from "./icons";
+import SlideIn, { HoverGesture } from "./animate";
 
 export default function Introduction() {
   return (
@@ -20,20 +21,24 @@ export default function Introduction() {
         />
       </div>
 
-      <article className="lg:self-center text-center lg:text-left flex flex-col gap-4">
-        <h1 className="font-clash-display font-bold text-xl lg:text-3-5xl mx-auto lg:mx-0 lg:leading-10">
-          Introduction to getlinked <br />
-          <span className="text-primary-200">tech Hackathon 1.0</span>
-        </h1>
-        <p className="leading-7 text-sm">
-          {`Our tech hackathon is a melting pot of visionaries, and its purpose
+      <div className="lg:self-center overflow-hidden">
+        <SlideIn>
+          <article className="text-center lg:text-left flex flex-col gap-4">
+            <h1 className="font-clash-display font-bold text-xl lg:text-3-5xl mx-auto lg:mx-0 lg:leading-10">
+              Introduction to getlinked <br />
+              <span className="text-primary-200">tech Hackathon 1.0</span>
+            </h1>
+            <p className="leading-7 text-sm">
+              {`Our tech hackathon is a melting pot of visionaries, and its purpose
             is as clear as day: to shape the future. Whether you're a coding
             genius, a design maverick, or a concept wizard, you'll have the
             chance to transform your ideas into reality. Solving real-world
             problems, pushing the boundaries of technology, and creating
             solutions that can change the world, that's what we're all about!`}
-        </p>
-      </article>
+            </p>
+          </article>
+        </SlideIn>
+      </div>
     </section>
   );
 }

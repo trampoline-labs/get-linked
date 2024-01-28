@@ -1,6 +1,6 @@
 # Getlinked
 
-This repo hosts the GetLinked Hackathon official website.
+This repo hosts the GetLinked Hackathon official website. It is our solution to the [getlinked](https://twitter.com/getLinkedai) pre-hackathon challenge.
 
 ## Links
 
